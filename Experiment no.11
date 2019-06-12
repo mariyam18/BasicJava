@@ -1,0 +1,50 @@
+* /
+Experiment No: 11
+Name         :BEG MO TAHIR RAJA HAKIKULLA
+Div.         :SE EE
+Roll No.     :16EE11
+Aim          :WAP to implement 2-D arrey
+*/
+
+class Multiplication
+{
+final static int ROW=2;
+final static int COLUMN=2;
+public static void main(String args[])
+{
+int product[][]=new int [ROW][COLUMN];
+int rows=2,column=2;
+System.out.println("Multiplication table");
+System.out.println("  ");
+int i,j;
+for(i=0;i<rows;i++)
+{
+for(j=0;j<column;j++)
+{
+product[i][j]=i*j;
+System.out.println("    "+product[i][j]);
+}
+System.out.println("   ");
+}
+}
+}
+
+/*
+ output
+ Multiplication table
+  
+    0
+    0
+   
+    0
+    1
+   
+
+
+------------------
+(program exited with code: 0)
+Press return to continue
+
+
+
+*/

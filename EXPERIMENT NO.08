@@ -1,0 +1,39 @@
+Experiment No: 08
+Name         :BEG MO TAHIR RAJA HAKIKULLA
+Div.         :SE EE
+Roll No.     :16EE11
+Aim          :WAP to accept data through keyboard.
+*/
+:
+PROGRAM
+import java.util.*;
+import java.io.*;
+class Inputmethods
+{
+public static void main(String args[]) throws Exception
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter an integer number");
+int n=sc.nextInt();
+System.out.println("entered integer number is;"+n);
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+System.out.println("enter statement");
+String text=br.readLine();
+System.out.print("entered statement is;"+text);
+}
+}
+
+/*OUTPUT
+enter an integer number
+23
+entered integer number is;23
+enter statement
+baig tahir
+entered statement is;baig tahir
+
+------------------
+(program exited with code: 0)
+Press return to continue
+
+
+*/

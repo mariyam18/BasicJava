@@ -1,0 +1,45 @@
+/*  
+Experiment No: 05
+Name         :BEG MO TAHIR RAJA HAKIKULLA
+Div.         :SE EE
+Roll No.     :16EE11
+Aim          :WAP to implement method overloading
+*/
+
+PROGRAM:  
+class circle
+{
+float area(int x)
+{
+return(3.14f*x*x);
+}
+float area(float x)
+{
+return(3.14f*x*x);
+}
+}
+
+class Circlearea
+{
+public static void main(String args[])
+{
+float area1;
+circle c=new circle();
+area1=c.area(10);
+System.out.println("Area of circle using integer is:"+area1);
+area1=c.area(25.5f);
+System.out.println("Area of circle using float is:"+area1);
+}
+}
+
+/*
+OUTPUT:
+Area of circle using integer is:314.0
+Area of circle using float is:2041.785
+
+
+------------------
+(program exited with code: 0)
+Press return to continue
+
+*/

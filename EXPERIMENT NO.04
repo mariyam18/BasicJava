@@ -1,0 +1,33 @@
+
+class Room
+{
+float length,breadth;
+Room(float x,float y)
+{
+length=x;
+breadth=y;
+}
+Room(float x)
+{
+length=breadth=x;
+}
+float area()
+{
+return(length*breadth);
+}
+}
+
+class Roomarea
+{
+public static void main(String args[])
+{
+float area1;
+Room r1=new Room(10.1f,11.1f);
+area1=r1.area();
+System.out.println("Area using 2 parameter constructor is:"+area1);
+Room r2=new Room(20.1f);
+area1=r2.area();
+System.out.println("Area using 1 parameter constructor is:"+area1);
+}
+}
+

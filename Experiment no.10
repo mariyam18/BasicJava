@@ -1,0 +1,63 @@
+class Numbersorting
+{
+public static void main(String args[])
+{
+* /
+Experiment No: 10
+Name         :BEG MO TAHIR RAJA HAKIKULLA
+Div.         :SE EE
+Roll No.     :16EE11
+Aim          :WAP to implement 1-D Array
+*/
+
+int i,j,temp;
+int number[]={55,40,80,65,71};
+int n=number.length;
+System.out.println("Given array:");
+for(i=0;i<n;i++)
+{
+System.out.println("\t" +number[i]);
+}
+//sorting begins
+for(i=0;i<n;i++)
+{
+for(j=i+1;j<n;j++)
+{
+if(number[i]<number[j])
+{
+temp=number[i];
+number[i]=number[j];
+number[j]=temp;
+}
+}
+}
+System.out.println("sorted list is:");
+for(i=0;i<n;i++)
+{
+System.out.println("    "+number[i]);
+}
+System.out.println("   ");
+}
+}
+
+/*
+  output
+ Given array:
+	55
+	40
+	80
+	65
+	71
+sorted list is:
+    80
+    71
+    65
+    55
+    40
+   
+
+
+------------------
+(program exited with code: 0)
+Press return to continue
+*/
